@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background: linear-gradient(#21E5D1, #44A3D3);
+    background-size: cover;
+    text-shadow: 0 0 2px black;
+    text-align: center;
+    height: 500px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+h4 {
+    border: 1px solid black;
+    border-radius: 6px;
+    background: black;
+    color: #BF1C2C;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 90px;
+    padding: 50px 50px;
+    width: 120px;
+    margin-top : 10px;
+    margin-bottom: 33px;
+}
+
+h3 {
+    font-family: 'Golos Text', sans-serif;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 60px;
+    font-weight: 850;
+    color: white;
+}
+
+button {
+    width: 70px;
+    height: 30px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-size: 20px;
+    background: linear-gradient(#21E5D1, #44A3D3);
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 40px;
+    color: white;
+}
+
+#reset {
+    display: flex;
+    justify-content: center  
+}
+
+#new-game {
+    width: 130px;
+    height: 50px;
+    font-family: 'Golos Text', sans-serif;
+}
