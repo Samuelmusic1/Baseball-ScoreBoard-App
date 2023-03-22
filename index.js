@@ -90,4 +90,8 @@ function zero() {
     countEl.textContent = countftn
     home = 0
     guest = 0
+    if (home === guest) {
+        buttonTwo.classList.remove('highscore');
+        countEl.classList.remove('highscore');
+    }
 }
