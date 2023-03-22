@@ -1,44 +1,93 @@
 let countEl = document.getElementById("count-el")
 let buttonTwo = document.getElementById("button-two")
 let newgame = document.getElementById("new-game")
-let count = 0
+let home = 0
+let guest = 0
 
 function click1() {
-    count = count + 1
-    countEl.textContent = count
+    home = home + 1
+    countEl.textContent = home
+    if (home > guest) {
+        countEl.classList.add('highscore');
+        buttonTwo.classList.remove('highscore');
+    } 
+    else if (home === guest) {
+        countEl.classList.remove('highscore');
+        buttonTwo.classList.remove('highscore');
+    }
 }
 
 function click2() {
-    count = count + 2
-    countEl.textContent = count
+    home = home + 2
+    countEl.textContent = home
+    if (home > guest) {
+        countEl.classList.add('highscore');
+        buttonTwo.classList.remove('highscore');
+    } 
+    else if (home === guest) {
+        countEl.classList.remove('highscore');
+        buttonTwo.classList.remove('highscore');
+    }
 }
 
 function click3() {
-    count = count + 3
-    countEl.textContent = count
+    home = home + 3
+    countEl.textContent = home
+    if (home > guest) {
+        countEl.classList.add('highscore');
+        buttonTwo.classList.remove('highscore');
+    } 
+    else if (home === guest) {
+        countEl.classList.remove('highscore');
+        buttonTwo.classList.remove('highscore');
+    }
 }
 
-let countnew = 0
+
 
 function stwo() {
-    countnew = countnew + 1
-    buttonTwo.textContent = countnew
+    guest = guest + 1
+    buttonTwo.textContent = guest
+    if (home < guest) {
+        buttonTwo.classList.add('highscore');
+        countEl.classList.remove('highscore');
+    } 
+    else if (home === guest) {
+        buttonTwo.classList.remove('highscore');
+        countEl.classList.remove('highscore');
+    }
 }
 
 function ttwo() {
-    countnew = countnew + 2
-    buttonTwo.textContent = countnew
+    guest = guest + 2
+    buttonTwo.textContent = guest
+    if (home < guest) {
+        buttonTwo.classList.add('highscore');
+        countEl.classList.remove('highscore');
+    } 
+    else if (home === guest) {
+        buttonTwo.classList.remove('highscore');
+        countEl.classList.remove('highscore');
+    }
 }
 
 function utwo() {
-    countnew = countnew + 3
-    buttonTwo.textContent = countnew
+    guest = guest + 3
+    buttonTwo.textContent = guest
+    if (home < guest) {
+        buttonTwo.classList.add('highscore');
+        countEl.classList.remove('highscore');
+    } 
+    else if (home === guest) {
+        buttonTwo.classList.remove('highscore');
+        countEl.classList.remove('highscore');
+    }
 }
 
 function zero() {
     let countftn = 0 
     buttonTwo.textContent = countftn
     countEl.textContent = countftn
-    count = 0
-    countnew = 0
+    home = 0
+    guest = 0
 }
